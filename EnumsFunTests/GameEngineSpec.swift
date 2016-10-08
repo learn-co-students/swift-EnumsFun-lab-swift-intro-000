@@ -17,10 +17,10 @@ import Nimble
 class GameEngineSpec: QuickSpec {
     override func spec() {
         describe("GameEngine") {
-            var gameEngine = GameEngine(player1: "Player1", player2: "Player2")
+            var gameEngine = GameEngineSpec(player1: "Player1", player2: "Player2")
 
             beforeEach {
-                gameEngine = GameEngine(player1: "Player1", player2: "Player2")
+                gameEngine = gameEngine(player1: "Player1", player2: "Player2")
             }
 
             describe("initializer") {

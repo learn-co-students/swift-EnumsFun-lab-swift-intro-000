@@ -59,10 +59,20 @@ class PlayerSpec: QuickSpec {
 
             describe("flipCard") {
                 it("returns a card if the player has cards in their hand") {
-                    let card = player.flip()
+                    let card = player.flip() != nil
                     expect(card).to(beTruthy())
                 }
 
+//                describe("flipCard") {
+//                    it("returns a card if the player has cards in their hand") {
+//                        let card = player.flip() != nil
+//                        expect(card).to(beTruthy())
+//                    }
+                
+                
+                
+                
+                
                 it("returns nil if the player does not have cards in their hand") {
                     let hand = Hand(cards: [])
                     player = Player(name: "Player", hand: hand)
@@ -87,3 +97,36 @@ class PlayerSpec: QuickSpec {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
