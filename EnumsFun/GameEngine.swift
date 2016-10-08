@@ -35,20 +35,20 @@ class GameEngine {
         //if both players have cards
         var result: (Player, Card?, Card?) = (player1, nil, nil)
         if player1.hasCards() && player2.hasCards() {
-            let player1Card = player1.flip()
-            let player2Card = player2.flip()
-            if (player1Card?.rank.rawValue)! > (player2Card?.rank.rawValue)! {
+            let player1Card = player1.flip()!
+            let player2Card = player2.flip()!
+            if player1Card.rank.rawValue > player2Card.rank.rawValue {
                 //this gives both of the cards to the winner
-                award(cards: [player1Card!, player2Card!], to: player1)
+                award(cards: [player1Card, player2Card], to: player1)
                 result = (player1, player1Card, player2Card)
-            } else if (player2Card?.rank.rawValue)! > (player1Card?.rank.rawValue)! {
-                award(cards: [player1Card!, player2Card!], to: player2)
+            } else if player2Card.rank.rawValue > player1Card.rank.rawValue {
+                award(cards: [player1Card, player2Card], to: player2)
                 result = (player1, player1Card, player2Card)
             }
         }
-        if player1.hasCards() && !player2.hasCards() {
-            result = (player1, nil, nil)
-        }
+//        if player1.hasCards() && !player2.hasCards() {
+//            result = (player1, nil, nil)
+//        }
         if player2.hasCards() && !player1.hasCards() {
             result = (player2, nil, nil)
         }
@@ -58,7 +58,7 @@ class GameEngine {
     //Implement a method called award(cards:to:). This methods first parameter is called cards of type [Card]. The second parameter should be called player of type player. It should give the player all of the cards. (Hint: Don't forget about the give(card:) method you implemented on the Player class.)
     func award(cards: [Card],to player: Player) {
         for card in cards {
-            player.giveCard(toBottomOfHand: card)
+            player.giveCard(card: card)
         }
     }
     

@@ -40,12 +40,12 @@ class Player {
         }
     }
     
-    func giveCard(toBottomOfHand card:Card) {
-        hand.giveCard(toBottomOfHand: card)
+    func giveCard(card:Card) {
+        hand.giveCard(card: card)
     }
     
-    func loseCard(fromHand card:Card) {
-        hand.loseCard(fromHand: card)
+    func loseCard(card:Card) {
+        hand.loseCard(card: card)
     }
     //Implement giveCard(_:) and loseCard(_:) as described in Hand.swift, above. They should do the same thing.
     //(Hint: flip(), giveCard(_:), and loseCard(_:) will probably make use of the same methods defined on the Hand class.)
