@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40F3CF0A1DDFC47400BB29DF /* Shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F3CF091DDFC47400BB29DF /* Shuffle.swift */; };
 		6FA73C9C9B22092BE3B2D01A /* Pods_EnumsFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6BEB565F2453886FAE0A25 /* Pods_EnumsFun.framework */; };
 		7D2BCC1A1D3FFCC800B4CD52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BCC191D3FFCC800B4CD52 /* AppDelegate.swift */; };
 		7D2BCC1C1D3FFCC800B4CD52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BCC1B1D3FFCC800B4CD52 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		149EA297DE44E7D7B5DC7CA5 /* Pods-EnumsFunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnumsFunTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnumsFunTests/Pods-EnumsFunTests.release.xcconfig"; sourceTree = "<group>"; };
 		21F9F56CAA1502CB54215923 /* Pods-EnumsFunTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnumsFunTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnumsFunTests/Pods-EnumsFunTests.debug.xcconfig"; sourceTree = "<group>"; };
+		40F3CF091DDFC47400BB29DF /* Shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shuffle.swift; sourceTree = "<group>"; };
 		7B42E220F296C6223C32FDF8 /* Pods_EnumsFunTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnumsFunTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2BCC161D3FFCC800B4CD52 /* EnumsFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnumsFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2BCC191D3FFCC800B4CD52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				7D2BCC1B1D3FFCC800B4CD52 /* ViewController.swift */,
 				B7A3C0CF1D518C1B00851E3C /* Card.swift */,
 				B7A3C0D51D5190F800851E3C /* Deck.swift */,
+				40F3CF091DDFC47400BB29DF /* Shuffle.swift */,
 				B7A3C0DB1D519F2E00851E3C /* GameEngine.swift */,
 				B7A3C0D71D519EA400851E3C /* Hand.swift */,
 				B7A3C0D91D519ED000851E3C /* Player.swift */,
@@ -367,6 +370,7 @@
 				B7A3C0D21D518E4700851E3C /* Array.swift in Sources */,
 				B7A3C0D81D519EA400851E3C /* Hand.swift in Sources */,
 				B7A3C0DC1D519F2E00851E3C /* GameEngine.swift in Sources */,
+				40F3CF0A1DDFC47400BB29DF /* Shuffle.swift in Sources */,
 				B7A3C0D61D5190F800851E3C /* Deck.swift in Sources */,
 				B7A3C0DA1D519ED000851E3C /* Player.swift in Sources */,
 				B7A3C0D01D518C1B00851E3C /* Card.swift in Sources */,
