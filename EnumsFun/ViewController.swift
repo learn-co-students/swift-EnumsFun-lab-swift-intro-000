@@ -17,5 +17,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var flipCardButton: UIButton!
 
     @IBAction func flipCard(_ sender: UIButton) {
+        let ge = GameEngine(player1: "Myself",player2: "Opponent")
+        var winner:Player
+        var myCard:Card?
+        var oppCard:Card?
+        var playerCnt = 0
+        var opponentCnt = 0
+        (winner,myCard,oppCard)  = ge.playOneTurn()
+        opponentCardLabel.text = oppCard?.description
+        playerCardLabel.text = myCard?.description
+        winnerLabel.text = winner.name
+        if winner.name == "Myself"{
+            playerCnt += 1
+            playerScoreLabel.text = String(playerCnt)
+        }else
+        if winner.name == "Opponent"{
+            opponentCnt += 1
+            playerScoreLabel.text = String(opponentCnt)
+        }
+        
     }
 }
