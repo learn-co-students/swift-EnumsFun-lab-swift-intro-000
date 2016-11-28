@@ -9,4 +9,31 @@
 import Foundation
 
 class Deck {
+    var cards: [Card]
+    
+    init() {
+        cards = []
+        for suit in ["♠️", "♣️", "♥️", "♦️"] {
+            for rank in 2...14 {
+                let suit = Suit(rawValue: suit)!
+                let rank = Rank(rawValue: rank)!
+                let card = Card(rank: rank, suit: suit)
+                cards.append(card)
+            }
+        }
+        cards.shuffle()
+    }
+    
+    func split() -> ([Card], [Card]) {
+        return cards.split()
+    }
+    
 }
+
+
+//func split() -> ([Element], [Element]) {
+//    let middle = count / 2
+//    let left = self[0..<middle]
+//    let right = self[middle..<count]
+//    return (Array(left), Array(right))
+//}
