@@ -29,11 +29,3 @@ class Deck {
     }
     
 }
-
-
-//func split() -> ([Element], [Element]) {
-//    let middle = count / 2
-//    let left = self[0..<middle]
-//    let right = self[middle..<count]
-//    return (Array(left), Array(right))
-//}

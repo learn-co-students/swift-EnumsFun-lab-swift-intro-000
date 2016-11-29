@@ -22,7 +22,14 @@ class Hand {
         guard size > 0 else { return nil }
         return cards.remove(at: 0)
     }
-    // guard cuts down on nested statements and keeping things in proper scope, along with where for correct match. Size of hand to reference at and actually compare with, otherwise returning nil, perhaps there's another way
     
+    func give(card: Card) {
+        cards.append(card)
+    }
+    
+    func lose(card: Card) {
+        cards.remove(at: 0)
+    }
+    // ended up not using filter to match via card, because it's not specific enough and overkill for this.
     
 }

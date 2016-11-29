@@ -35,7 +35,7 @@ class Card {
     var suit: Suit
     var rank: Rank
     var description: String {
-        return "<\(rank.stringValue)><\(suit.rawValue)>"
+        return "\(rank.stringValue)\(suit.rawValue)"
     }
     
     init(rank: Rank, suit: Suit) {
