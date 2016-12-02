@@ -21,28 +21,28 @@ class HandSpec: QuickSpec {
             let rank2 = Rank(rawValue: 11)!
             let suit1 = Suit(rawValue: "♥️")!
             let suit2 = Suit(rawValue: "♠️")!
-
-            let card1 = Card(rank: rank1, suit: suit1)
-            let card2 = Card(rank: rank2, suit: suit2)
-
+            
+            let card1 = Card(suit: suit1, rank: rank1)
+            let card2 = Card(suit: suit2, rank: rank2)
+            
             var hand = Hand(cards: [card1, card2])
-
+            
             beforeEach {
                 hand = Hand(cards: [card1, card2])
             }
-
+            
             describe("initializer") {
                 it("adds all cards to the hand") {
                     expect(hand.cards.count).to(equal(2))
                 }
             }
-
+            
             describe("flip") {
                 it("returns a card if one exists in the hand") {
                     let card = hand.flip() != nil
                     expect(card).to(beTruthy())
                 }
-
+                
                 it("returns nil if the hand is empty") {
                     let card1 = hand.flip() != nil
                     let card2 = hand.flip() != nil
@@ -51,7 +51,7 @@ class HandSpec: QuickSpec {
                     expect(card2).to(beTruthy())
                     expect(card3).to(beNil())
                 }
-
+                
                 it("removes cards from the hand") {
                     var _ = hand.flip()
                     expect(hand.cards.count).to(equal(1))
@@ -61,7 +61,7 @@ class HandSpec: QuickSpec {
                     expect(hand.cards.count).to(equal(0))
                 }
             }
-
+            
             describe("size") {
                 it("returns the size of the hand") {
                     expect(hand.size).to(equal(2))
@@ -71,7 +71,7 @@ class HandSpec: QuickSpec {
                     expect(hand.size).to(equal(0))
                 }
             }
-
+            
             describe("giveCard") {
                 it("adds a card to the hand") {
                     expect(hand.size).to(equal(2))
@@ -79,7 +79,7 @@ class HandSpec: QuickSpec {
                     expect(hand.size).to(equal(3))
                 }
             }
-
+            
             describe("loseCard") {
                 it("takes a card from the hand") {
                     expect(hand.size).to(equal(2))

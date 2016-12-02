@@ -16,6 +16,7 @@ import Nimble
 
 class DeckSpec: QuickSpec {
     override func spec() {
+        
         describe("Deck") {
             let deck = Deck()
             describe("initializer") {
@@ -23,7 +24,7 @@ class DeckSpec: QuickSpec {
                     expect(deck.cards.count).to(equal(52))
                 }
             }
-
+            
             describe("split") {
                 it("splits a deck into two hands") {
                     let (left, right) = deck.split()
