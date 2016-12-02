@@ -20,29 +20,23 @@ class Player {
     }
     
     func hasCards() -> Bool{
-        return true
+        return hand.size > 0
     }
     
-    /*
+    
     func flip() -> Card? {
-        if self.hand.hasCards(){
-            return self.hand.cards[0]
+        if hasCards(){
+            return hand.flip()
         } else {
             return nil
         }
-    } */
+    }
     
+    func give(card: Card){
+        hand.give(card: card)
+    }
+    
+    func lose(card: Card){
+        hand.lose(card: card)
+    }
 }
-
-/*
-let rank1 = Rank(rawValue: 10)!
-let rank2 = Rank(rawValue: 11)!
-let suit1 = Suit(rawValue: "♥️")!
-let suit2 = Suit(rawValue: "♠️")!
-
-let card1 = Card(suit: suit1, rank: rank1)
-let card2 = Card(suit: suit2, rank: rank2)
-
-var hand = Hand(cards: [card1, card2])
-var player = Player(name: "Player", hand: hand)
-*/
