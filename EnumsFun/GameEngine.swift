@@ -45,6 +45,6 @@ class GameEngine {
     }
     
     func gameOver() -> Bool {
-        return player1.hasCards() && player2.hasCards()
+        return !player1.hasCards() || !player2.hasCards()
     }
 }
