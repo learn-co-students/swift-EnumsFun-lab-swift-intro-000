@@ -20,6 +20,7 @@ class CardSpec: QuickSpec {
             let rank = Rank(rawValue: 10)!
             let suit = Suit(rawValue: "♣️")!
             let card = Card(rank: rank, suit: suit)
+            
 
             describe("initializer") {
                 it("sets properties") {
@@ -34,6 +35,7 @@ class CardSpec: QuickSpec {
                 }
 
                 it("returns an appropriate description for face cards") {
+                    
                     var rank = Rank(rawValue: 11)!
                     var card = Card(rank: rank, suit: suit)
                     expect(card.description).to(equal("J♣️"))

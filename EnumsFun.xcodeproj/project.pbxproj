@@ -141,8 +141,8 @@
 			children = (
 				B7A3C0D31D518F3800851E3C /* ArraySpec.swift */,
 				B7A3C0DD1D51A9FC00851E3C /* CardSpec.swift */,
-				B7A3C0DF1D51AA7B00851E3C /* DeckSpec.swift */,
 				B7A3C0E51D51AFBF00851E3C /* GameEngineSpec.swift */,
+				B7A3C0DF1D51AA7B00851E3C /* DeckSpec.swift */,
 				B7A3C0E11D51AB9600851E3C /* HandSpec.swift */,
 				B7A3C0E31D51ADF600851E3C /* PlayerSpec.swift */,
 				7D2BCC301D3FFCC800B4CD52 /* Info.plist */,
@@ -212,7 +212,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Gamesmith, LLC";
 				TargetAttributes = {
 					7D2BCC151D3FFCC800B4CD52 = {
