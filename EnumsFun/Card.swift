@@ -21,25 +21,18 @@ enum Rank: Int {
         case 0..<11:
             return "\(self.rawValue)"
             case 11:
-                print("j")
                 return "J"
             case 12:
-                print("q")
                 return "Q"
             case 13:
-                print("k")
                 return "K"
             case 14:
-                print("a")
                 return "A"
             default:
                 return "unknown"
             }
         }
     }
-
-
-
 class Card {
 
     var suit: Suit

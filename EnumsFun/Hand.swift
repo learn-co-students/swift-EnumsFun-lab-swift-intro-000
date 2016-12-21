@@ -11,6 +11,7 @@ import Foundation
 class Hand {
     
     var cards:[Card] = []
+  
     var size: Int{
         return cards.count
     }
@@ -21,18 +22,23 @@ class Hand {
     
     func flip()-> Card?{
         if (!cards.isEmpty) {
+        
             return cards.removeFirst()
         }
         return nil
     }
     
     func give(card: Card){
-        self.cards.insert(card, at: (cards.count))
+        self.cards.insert(card, at: (self.cards.count))
     }
+    
+    
     func lose(card: Card){
+        if !self.cards.isEmpty{
         for (index,loseCard) in cards.enumerated(){
-            if(card === loseCard ){
+            if(card.description == loseCard.description ){
                 cards.remove(at: index)
+            }
             }
         }
     }

@@ -19,18 +19,18 @@ class Player {
     }
     
     func hasCards()->Bool{
-    return hand.cards.count > 0
+    return self.hand.cards.count > 0
     }
     
     func flip() -> Card? {
         if self.hasCards(){
-           return hand.cards.first
+           return self.hand.cards.first
         } else {
             return nil
         }
     }
     func give(card:Card){
-        hand.give(card: flip()!)
+        hand.give(card: card)
     }
     
     func lose(card:Card) {

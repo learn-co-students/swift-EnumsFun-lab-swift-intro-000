@@ -25,6 +25,7 @@ class Deck {
             }
         }
         cards = cards.shuffled()
+        print(cards.count)
         
     }
     
