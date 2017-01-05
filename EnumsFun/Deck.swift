@@ -9,4 +9,21 @@
 import Foundation
 
 class Deck {
+    
+    var cards: [Card]
+    
+    init () {
+        
+        var deck : [Card] = []
+        
+        for s in Suit {
+            for r in Rank.RawValue {
+                deck.append(s , r)
+            }
+        }
+        
+        cards = deck
+
+        
+    }
 }
