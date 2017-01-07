@@ -30,35 +30,35 @@ enum Rank: Int {
     case king = 13
     case ace = 14
     
-    var stringValue: Int {
+    var stringValue: String {
     
         switch self {
         case .two :
-            return 2
+            return "2"
         case .three :
-            return 3
+            return "3"
         case .four :
-            return 4
+            return "4"
         case .five :
-            return 5
+            return "5"
         case .six :
-            return 6
+            return "6"
         case .seven :
-            return 7
+            return "7"
         case .eight :
-            return 8
+            return "8"
         case .nine :
-            return 9
+            return "9"
         case .ten :
-            return 10
+            return "10"
         case .jack :
-            return 11
+            return "J"
         case .queen :
-            return 12
+            return "Q"
         case .king :
-            return 13
+            return "K"
         case .ace :
-            return 14
+            return "A"
             
            }
     
@@ -70,9 +70,9 @@ class Card {
     
     var suit: Suit
     var rank: Rank
-    var description: String {
+    var description1: String {
         
-        return "<rank><suit>"
+        return "\(rank.stringValue)\(suit.rawValue)"
     }
     
     init (suit: Suit, rank: Rank) {

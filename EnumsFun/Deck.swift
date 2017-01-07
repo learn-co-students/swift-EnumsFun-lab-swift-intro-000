@@ -14,16 +14,27 @@ class Deck {
     
     init () {
         
-        var deck : [Card] = []
+        cards = []
         
-        for s in Suit {
-            for r in Rank.RawValue {
-                deck.append(s , r)
+        for suit in ["♠️", "♣️", "♥️", "♦️"] {
+            
+            for rank in 2...14 {
+                let suit = Suit(rawValue: suit)!
+                let rank = Rank(rawValue: rank)!
+                let card = Card(suit: suit, rank: rank)
+                cards.append(card)
             }
         }
         
-        cards = deck
-
+        cards = cards.shuffled()
+        
+    }
+    
+    func split() -> ([Card],[Card]) {
+        
+        let splitDeck = cards.split()
+        
+        return splitDeck
         
     }
 }
