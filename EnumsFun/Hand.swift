@@ -9,4 +9,28 @@
 import Foundation
 
 class Hand {
+    var cards: [Card]
+    var size: Int {
+        return cards.count
+    }
+    
+    init(cards: [Card]) {
+        self.cards = cards
+    }
+    
+    func flip() -> Card? {
+        if size == 0 {
+            return nil
+        } else {
+            return cards.removeFirst()
+        }
+    }
+    
+    func give(card: Card) {
+        cards.append(card)
+    }
+    
+    func lose(card: Card) {
+        cards.removeFirst()
+    }
 }
