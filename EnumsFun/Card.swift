@@ -9,11 +9,16 @@
 import Foundation
 
 enum Suit: String {
+    
+    static let suits: [Suit] = [.spades, .diamonds, .hearts, .clubs]
+    
     case spades = "♠️", diamonds = "♦️", hearts = "♥️", clubs = "♣️"
 
 }
 
 enum Rank: Int {
+    
+    static let ranks: [Rank] = [.two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .jack, .queen, .king, .ace]
    
     case two = 2, three, four, five, six, seven, eight, nine, ten, jack, queen, king, ace
     
@@ -36,7 +41,7 @@ enum Rank: Int {
  
 }
 
-class Card {
+class Card: Equatable {
     
     let suit: Suit
     let rank: Rank
@@ -49,6 +54,9 @@ class Card {
         self.suit = suit
         self.rank = rank
     }
-
     
+    static func ==(lhs: Card, rhs: Card) -> Bool {
+        return lhs.description == rhs.description
+    }
+
 }
