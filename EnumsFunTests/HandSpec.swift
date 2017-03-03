@@ -25,10 +25,10 @@ class HandSpec: QuickSpec {
             let card1 = Card(rank: rank1, suit: suit1)
             let card2 = Card(rank: rank2, suit: suit2)
 
-            var hand = Hand(cards: [card1, card2])
+            var hand = Hand(cardsForHand: [card1, card2])
 
             beforeEach {
-                hand = Hand(cards: [card1, card2])
+                hand = Hand(cardsForHand: [card1, card2])
             }
 
             describe("initializer") {

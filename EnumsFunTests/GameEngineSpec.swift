@@ -40,8 +40,8 @@ class GameEngineSpec: QuickSpec {
                     let card1 = Card(rank: rank1, suit: suit1)
                     let card2 = Card(rank: rank2, suit: suit2)
 
-                    let hand1 = Hand(cards: [card1])
-                    let hand2 = Hand(cards: [card2])
+                    let hand1 = Hand(cardsForHand: [card1])
+                    let hand2 = Hand(cardsForHand: [card2])
 
                     gameEngine.player1.hand = hand1
                     gameEngine.player2.hand = hand2
@@ -58,8 +58,8 @@ class GameEngineSpec: QuickSpec {
 
                     let card2 = Card(rank: rank2, suit: suit2)
 
-                    let hand1 = Hand(cards: [])
-                    let hand2 = Hand(cards: [card2])
+                    let hand1 = Hand(cardsForHand: [])
+                    let hand2 = Hand(cardsForHand: [card2])
 
                     gameEngine.player1.hand = hand1
                     gameEngine.player2.hand = hand2
@@ -88,7 +88,7 @@ class GameEngineSpec: QuickSpec {
                 }
 
                 it("returns true if one or more players do not have cards") {
-                    let hand = Hand(cards: [])
+                    let hand = Hand(cardsForHand: [])
                     gameEngine.player2.hand = hand
                     expect(gameEngine.gameOver()).to(beTrue())
                 }
