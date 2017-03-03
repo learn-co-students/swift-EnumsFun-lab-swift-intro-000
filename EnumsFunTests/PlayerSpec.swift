@@ -25,11 +25,11 @@ class PlayerSpec: QuickSpec {
             let card1 = Card(rank: rank1, suit: suit1)
             let card2 = Card(rank: rank2, suit: suit2)
 
-            var hand = Hand(cards: [card1, card2])
+            var hand = Hand(cardsForHand: [card1, card2])
             var player = Player(name: "Player", hand: hand)
 
             beforeEach {
-                hand = Hand(cards: [card1, card2])
+                hand = Hand(cardsForHand: [card1, card2])
                 player = Player(name: "Player", hand: hand)
             }
 
@@ -51,7 +51,7 @@ class PlayerSpec: QuickSpec {
                 }
 
                 it("returns false if the player does not have cards in their hand") {
-                    let hand = Hand(cards: [])
+                    let hand = Hand(cardsForHand: [])
                     player = Player(name: "Player", hand: hand)
                     expect(player.hasCards()).to(beFalse())
                 }
@@ -64,7 +64,7 @@ class PlayerSpec: QuickSpec {
                 }
 
                 it("returns nil if the player does not have cards in their hand") {
-                    let hand = Hand(cards: [])
+                    let hand = Hand(cardsForHand: [])
                     player = Player(name: "Player", hand: hand)
                     let card = player.flip()
                     expect(card).to(beNil())
