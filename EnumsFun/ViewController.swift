@@ -9,19 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var opponentCardLabel: UILabel!
-    @IBOutlet weak var playerCardLabel: UILabel!
-    @IBOutlet weak var winnerLabel: UILabel!
-    @IBOutlet weak var playerScoreLabel: UILabel!
-    @IBOutlet weak var opponentScoreLabel: UILabel!
-    @IBOutlet weak var flipCardButton: UIButton!
+  
+  let gameEngine = GameEngine(player1: "Harry", player2: "Alexander")
+  
+  @IBOutlet weak var opponentCardLabel: UILabel!
+  @IBOutlet weak var playerCardLabel: UILabel!
+  @IBOutlet weak var winnerLabel: UILabel!
+  @IBOutlet weak var playerScoreLabel: UILabel!
+  @IBOutlet weak var opponentScoreLabel: UILabel!
+  @IBOutlet weak var flipCardButton: UIButton!
+  
+  
+  
+  @IBAction func flipCard(_ sender: UIButton) {
+    let game = gameEngine.playOneTurn()
     
-
+    opponentCardLabel.text = game.2?.description
+    playerCardLabel.text = game.1?.description
     
-    @IBAction func flipCard(_ sender: UIButton) {
-     
+    if gameEngine.player1.name == game.0.name {
+      
     }
-    
-   
-    
+  }
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  
 }
