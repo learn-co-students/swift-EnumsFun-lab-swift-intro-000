@@ -9,7 +9,29 @@
 import Foundation
 
 class Hand {
+    var cards: [Card]
+    var size: Int {
+        return cards.count
+    }
     
-
+    init(cards: [Card]) {
+        self.cards = cards
+    }
     
+    func flip() -> Card? {
+        guard !cards.isEmpty else { return nil }
+        return cards.removeLast()
+    }
+    
+    func give(card: Card) {
+        cards.insert(card, at: 0)
+    }
+    
+    func lose(card: Card) {
+        for (index, value) in cards.enumerated() {
+            if value.description == card.description {
+                cards.remove(at: index)
+            }
+        }
+    }
 }
