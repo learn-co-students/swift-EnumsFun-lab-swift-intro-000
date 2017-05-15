@@ -12,7 +12,7 @@ enum Suit: String {
     
     static let suits: [Suit] = [.Spades, .Diamonds, .Clubs, .Hearts];
     
-    case Spades = "♠️", Diamonds = "♦️", Hearts = "❤️", Clubs = "♣️";
+    case Spades = "♠️", Diamonds = "♦️", Hearts = "♥️", Clubs = "♣️";
 }
 
 enum Rank: Int {
@@ -37,18 +37,22 @@ enum Rank: Int {
     }
 }
 
-class Card {
+class Card: Equatable {
     
     let suit: Suit;
     let rank: Rank;
     
     var description: String {
-        return String(rank.rawValue) + suit.rawValue;
+        return String(rank.stringValue) + suit.rawValue;
     }
     
     init(rank: Rank, suit: Suit) {
         self.rank = rank;
         self.suit = suit;
+    }
+    
+    static func ==(lhs: Card, rhs: Card) -> Bool {
+        return lhs.description == rhs.description;
     }
     
 }
