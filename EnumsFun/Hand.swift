@@ -10,6 +10,30 @@ import Foundation
 
 class Hand {
     
-
+    var cards: [Card] = [];
+    var size: Int {
+        return cards.count;
+    }
     
+    init (cards: [Card]) {
+        self.cards = cards;
+    }
+    
+    func flip() -> Card? {
+        
+        return cards.popLast();
+    }
+    
+    func give(card: Card) {
+        cards.append(card);
+    }
+    
+    func lose(card: Card) {
+        
+        for (index, loopedCard) in cards.enumerated() {
+            if loopedCard == card {
+                cards.remove(at: index);
+            }
+        }
+    }
 }
