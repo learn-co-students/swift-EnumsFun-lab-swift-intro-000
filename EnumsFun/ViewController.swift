@@ -16,10 +16,32 @@ class ViewController: UIViewController {
     @IBOutlet weak var opponentScoreLabel: UILabel!
     @IBOutlet weak var flipCardButton: UIButton!
     
+    var gameEngine: GameEngine!
+    var you: Player {
+        return gameEngine.player2
+    }
+    var opponent: Player {
+        return gameEngine.player1
+    }
 
-    
+    override func viewDidLoad() {
+        gameEngine = GameEngine(player1name: "you", player2name: "opponent")
+        playerScoreLabel.text = "You: \(you.hand.size)"
+        opponentScoreLabel.text = "Opponent: \(opponent.hand.size)"
+    }
+
     @IBAction func flipCard(_ sender: UIButton) {
-     
+       let (winner, card1, card2) = gameEngine.playOneTurn()
+        playerCardLabel.text = "\(card1?.rank.stringValue)\(card1?.suit.rawValue)"
+        opponentCardLabel.text = "\(card2?.rank.stringValue)\(card2?.suit.rawValue)"
+        if winner.name == "you" {
+           playerScoreLabel.text = "You: \(winner.hand.size)"
+            winnerLabel.text = "You win!"
+        } else {
+            //winner is opponent
+            opponentScoreLabel.text = "Opponent: \(opponent.hand.size)"
+            winnerLabel.text = "Opponent wins!"
+        }
     }
     
    
