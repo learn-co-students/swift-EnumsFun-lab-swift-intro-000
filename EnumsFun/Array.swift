@@ -8,12 +8,16 @@
 
 import Foundation
 
+
+    
+
+
 extension Array {
     func split() -> ([Element], [Element]) {
         let middle = count / 2
         let left = self[0..<middle]
         let right = self[middle..<count]
-        return (Array(left), Array(right))
+        return (Array(left) as! [Element], Array(right) as! [Element])
     }
 }
 
@@ -27,7 +31,7 @@ extension MutableCollection where Indices.Iterator.Element == Index {
             let d: IndexDistance = numericCast(arc4random_uniform(numericCast(unshuffledCount)))
             guard d != 0 else { continue }
             let i = index(firstUnshuffled, offsetBy: d)
-            swap(&self[firstUnshuffled], &self[i])
+            self.swapAt(firstUnshuffled, i)
         }
     }
 }
@@ -40,3 +44,4 @@ extension Sequence {
         return result
     }
 }
+ 

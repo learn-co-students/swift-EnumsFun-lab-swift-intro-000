@@ -19,9 +19,10 @@ class PlayerSpec: QuickSpec {
         describe("Player") {
             let rank1 = Rank(rawValue: 10)!
             let rank2 = Rank(rawValue: 11)!
-            let suit1 = Suit(rawValue: "♥️")!
-            let suit2 = Suit(rawValue: "♠️")!
-
+            
+            let suit1 = Suit(rawValue: "♥︎")!
+            let suit2 = Suit(rawValue: "♠︎")!
+            
             let card1 = Card(rank: rank1, suit: suit1)
             let card2 = Card(rank: rank2, suit: suit2)
 

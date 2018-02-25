@@ -34,8 +34,8 @@ class GameEngineSpec: QuickSpec {
                 it("returns the winner of the turn") {
                     let rank1 = Rank(rawValue: 10)!
                     let rank2 = Rank(rawValue: 8)!
-                    let suit1 = Suit(rawValue: "♠️")!
-                    let suit2 = Suit(rawValue: "♥️")!
+                    let suit1 = Suit(rawValue: "♣︎")!
+                    let suit2 = Suit(rawValue: "♥︎")!
 
                     let card1 = Card(rank: rank1, suit: suit1)
                     let card2 = Card(rank: rank2, suit: suit2)
@@ -54,7 +54,7 @@ class GameEngineSpec: QuickSpec {
 
                 it("returns nil cards if a player has no cards") {
                     let rank2 = Rank(rawValue: 10)!
-                    let suit2 = Suit(rawValue: "♠️")!
+                    let suit2 = Suit(rawValue: "♣︎")!
 
                     let card2 = Card(rank: rank2, suit: suit2)
 
@@ -74,7 +74,7 @@ class GameEngineSpec: QuickSpec {
             describe("awardCards") {
                 it("awards cards to a player") {
                     let rank1 = Rank(rawValue: 10)!
-                    let suit1 = Suit(rawValue: "♠️")!
+                    let suit1 = Suit(rawValue: "♣︎")!
                     let card1 = Card(rank: rank1, suit: suit1)
                     gameEngine.award(cards: [card1], to: gameEngine.player1)
                     expect(gameEngine.player1.hand.size).to(equal(27))
