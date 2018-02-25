@@ -11,7 +11,6 @@
 		1F8F6D25203FE39800714AB3 /* DeckSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F6D24203FE39700714AB3 /* DeckSpec.swift */; };
 		1F8F6D27203FF1CE00714AB3 /* HandSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F6D26203FF1CE00714AB3 /* HandSpec.swift */; };
 		1F8F6D29203FF62B00714AB3 /* PlayerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F6D28203FF62B00714AB3 /* PlayerSpec.swift */; };
-		1F8F6D2B203FF6EB00714AB3 /* GameEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F6D2A203FF6EB00714AB3 /* GameEngineSpec.swift */; };
 		6FA73C9C9B22092BE3B2D01A /* Pods_EnumsFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6BEB565F2453886FAE0A25 /* Pods_EnumsFun.framework */; };
 		7D2BCC1A1D3FFCC800B4CD52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BCC191D3FFCC800B4CD52 /* AppDelegate.swift */; };
 		7D2BCC1C1D3FFCC800B4CD52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BCC1B1D3FFCC800B4CD52 /* ViewController.swift */; };
@@ -44,7 +43,6 @@
 		1F8F6D24203FE39700714AB3 /* DeckSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckSpec.swift; sourceTree = "<group>"; };
 		1F8F6D26203FF1CE00714AB3 /* HandSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandSpec.swift; sourceTree = "<group>"; };
 		1F8F6D28203FF62B00714AB3 /* PlayerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSpec.swift; sourceTree = "<group>"; };
-		1F8F6D2A203FF6EB00714AB3 /* GameEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEngineSpec.swift; sourceTree = "<group>"; };
 		21F9F56CAA1502CB54215923 /* Pods-EnumsFunTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnumsFunTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnumsFunTests/Pods-EnumsFunTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B42E220F296C6223C32FDF8 /* Pods_EnumsFunTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnumsFunTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2BCC161D3FFCC800B4CD52 /* EnumsFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnumsFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				1F8F6D28203FF62B00714AB3 /* PlayerSpec.swift */,
-				1F8F6D2A203FF6EB00714AB3 /* GameEngineSpec.swift */,
 				1F8F6D26203FF1CE00714AB3 /* HandSpec.swift */,
 				1F8F6D24203FE39700714AB3 /* DeckSpec.swift */,
 				B7A3C0D31D518F3800851E3C /* ArraySpec.swift */,
@@ -391,7 +388,6 @@
 			files = (
 				1F8F6D25203FE39800714AB3 /* DeckSpec.swift in Sources */,
 				1F8F6D29203FF62B00714AB3 /* PlayerSpec.swift in Sources */,
-				1F8F6D2B203FF6EB00714AB3 /* GameEngineSpec.swift in Sources */,
 				B7A3C0DE1D51A9FC00851E3C /* CardSpec.swift in Sources */,
 				B7A3C0D41D518F3800851E3C /* ArraySpec.swift in Sources */,
 				1F8F6D27203FF1CE00714AB3 /* HandSpec.swift in Sources */,
