@@ -22,8 +22,8 @@ class HandSpec: QuickSpec {
             let suit1 = Suit(rawValue: "♥️")!
             let suit2 = Suit(rawValue: "♠️")!
 
-            let card1 = Card(rank: rank1, suit: suit1)
-            let card2 = Card(rank: rank2, suit: suit2)
+            let card1 = Card(suit: suit1, rank: rank1)
+            let card2 = Card(suit: suit2, rank: rank2)
 
             var hand = Hand(cards: [card1, card2])
 
@@ -75,7 +75,7 @@ class HandSpec: QuickSpec {
             describe("giveCard") {
                 it("adds a card to the hand") {
                     expect(hand.size).to(equal(2))
-                    hand.give(card: card1)
+                    hand.giveCard(card: card1)
                     expect(hand.size).to(equal(3))
                 }
             }
@@ -83,7 +83,7 @@ class HandSpec: QuickSpec {
             describe("loseCard") {
                 it("takes a card from the hand") {
                     expect(hand.size).to(equal(2))
-                    hand.lose(card: card1)
+                    hand.loseCard(card: card1)
                     expect(hand.size).to(equal(1))
                 }
             }
