@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F313ED2203F997C00E665E9 /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F313ED1203F997C00E665E9 /* GameEngine.swift */; };
+		1F8F6D25203FE39800714AB3 /* DeckSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F6D24203FE39700714AB3 /* DeckSpec.swift */; };
+		1F8F6D27203FF1CE00714AB3 /* HandSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F6D26203FF1CE00714AB3 /* HandSpec.swift */; };
+		1F8F6D29203FF62B00714AB3 /* PlayerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8F6D28203FF62B00714AB3 /* PlayerSpec.swift */; };
 		6FA73C9C9B22092BE3B2D01A /* Pods_EnumsFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6BEB565F2453886FAE0A25 /* Pods_EnumsFun.framework */; };
 		7D2BCC1A1D3FFCC800B4CD52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BCC191D3FFCC800B4CD52 /* AppDelegate.swift */; };
 		7D2BCC1C1D3FFCC800B4CD52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BCC1B1D3FFCC800B4CD52 /* ViewController.swift */; };
@@ -20,12 +24,7 @@
 		B7A3C0D61D5190F800851E3C /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C0D51D5190F800851E3C /* Deck.swift */; };
 		B7A3C0D81D519EA400851E3C /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C0D71D519EA400851E3C /* Hand.swift */; };
 		B7A3C0DA1D519ED000851E3C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C0D91D519ED000851E3C /* Player.swift */; };
-		B7A3C0DC1D519F2E00851E3C /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C0DB1D519F2E00851E3C /* GameEngine.swift */; };
 		B7A3C0DE1D51A9FC00851E3C /* CardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C0DD1D51A9FC00851E3C /* CardSpec.swift */; };
-		B7A3C0E01D51AA7B00851E3C /* DeckSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C0DF1D51AA7B00851E3C /* DeckSpec.swift */; };
-		B7A3C0E21D51AB9600851E3C /* HandSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C0E11D51AB9600851E3C /* HandSpec.swift */; };
-		B7A3C0E41D51ADF600851E3C /* PlayerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C0E31D51ADF600851E3C /* PlayerSpec.swift */; };
-		B7A3C0E61D51AFBF00851E3C /* GameEngineSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C0E51D51AFBF00851E3C /* GameEngineSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +39,10 @@
 
 /* Begin PBXFileReference section */
 		149EA297DE44E7D7B5DC7CA5 /* Pods-EnumsFunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnumsFunTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnumsFunTests/Pods-EnumsFunTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F313ED1203F997C00E665E9 /* GameEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
+		1F8F6D24203FE39700714AB3 /* DeckSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckSpec.swift; sourceTree = "<group>"; };
+		1F8F6D26203FF1CE00714AB3 /* HandSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandSpec.swift; sourceTree = "<group>"; };
+		1F8F6D28203FF62B00714AB3 /* PlayerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSpec.swift; sourceTree = "<group>"; };
 		21F9F56CAA1502CB54215923 /* Pods-EnumsFunTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnumsFunTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnumsFunTests/Pods-EnumsFunTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B42E220F296C6223C32FDF8 /* Pods_EnumsFunTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnumsFunTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2BCC161D3FFCC800B4CD52 /* EnumsFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnumsFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,12 +61,7 @@
 		B7A3C0D51D5190F800851E3C /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 		B7A3C0D71D519EA400851E3C /* Hand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
 		B7A3C0D91D519ED000851E3C /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
-		B7A3C0DB1D519F2E00851E3C /* GameEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEngine.swift; sourceTree = "<group>"; };
 		B7A3C0DD1D51A9FC00851E3C /* CardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSpec.swift; sourceTree = "<group>"; };
-		B7A3C0DF1D51AA7B00851E3C /* DeckSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeckSpec.swift; sourceTree = "<group>"; };
-		B7A3C0E11D51AB9600851E3C /* HandSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandSpec.swift; sourceTree = "<group>"; };
-		B7A3C0E31D51ADF600851E3C /* PlayerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSpec.swift; sourceTree = "<group>"; };
-		B7A3C0E51D51AFBF00851E3C /* GameEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEngineSpec.swift; sourceTree = "<group>"; };
 		CD6BEB565F2453886FAE0A25 /* Pods_EnumsFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnumsFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21F1A0FB6121FAA72AF640F /* Pods-EnumsFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnumsFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnumsFun/Pods-EnumsFun.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,9 +120,9 @@
 			children = (
 				7D2BCC191D3FFCC800B4CD52 /* AppDelegate.swift */,
 				7D2BCC1B1D3FFCC800B4CD52 /* ViewController.swift */,
+				1F313ED1203F997C00E665E9 /* GameEngine.swift */,
 				B7A3C0CF1D518C1B00851E3C /* Card.swift */,
 				B7A3C0D51D5190F800851E3C /* Deck.swift */,
-				B7A3C0DB1D519F2E00851E3C /* GameEngine.swift */,
 				B7A3C0D71D519EA400851E3C /* Hand.swift */,
 				B7A3C0D91D519ED000851E3C /* Player.swift */,
 				B7A3C0D11D518E4700851E3C /* Array.swift */,
@@ -139,12 +137,11 @@
 		7D2BCC2D1D3FFCC800B4CD52 /* EnumsFunTests */ = {
 			isa = PBXGroup;
 			children = (
+				1F8F6D28203FF62B00714AB3 /* PlayerSpec.swift */,
+				1F8F6D26203FF1CE00714AB3 /* HandSpec.swift */,
+				1F8F6D24203FE39700714AB3 /* DeckSpec.swift */,
 				B7A3C0D31D518F3800851E3C /* ArraySpec.swift */,
 				B7A3C0DD1D51A9FC00851E3C /* CardSpec.swift */,
-				B7A3C0DF1D51AA7B00851E3C /* DeckSpec.swift */,
-				B7A3C0E51D51AFBF00851E3C /* GameEngineSpec.swift */,
-				B7A3C0E11D51AB9600851E3C /* HandSpec.swift */,
-				B7A3C0E31D51ADF600851E3C /* PlayerSpec.swift */,
 				7D2BCC301D3FFCC800B4CD52 /* Info.plist */,
 			);
 			path = EnumsFunTests;
@@ -212,7 +209,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Gamesmith, LLC";
 				TargetAttributes = {
 					7D2BCC151D3FFCC800B4CD52 = {
@@ -287,13 +284,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnumsFunTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		87E8517C966F3A170FC45988 /* [CP] Embed Pods Frameworks */ = {
@@ -302,9 +302,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EnumsFunTests/Pods-EnumsFunTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -332,13 +337,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EnumsFun-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F11016230BBF7DDCB1E505CD /* [CP] Copy Pods Resources */ = {
@@ -366,7 +374,7 @@
 				7D2BCC1C1D3FFCC800B4CD52 /* ViewController.swift in Sources */,
 				B7A3C0D21D518E4700851E3C /* Array.swift in Sources */,
 				B7A3C0D81D519EA400851E3C /* Hand.swift in Sources */,
-				B7A3C0DC1D519F2E00851E3C /* GameEngine.swift in Sources */,
+				1F313ED2203F997C00E665E9 /* GameEngine.swift in Sources */,
 				B7A3C0D61D5190F800851E3C /* Deck.swift in Sources */,
 				B7A3C0DA1D519ED000851E3C /* Player.swift in Sources */,
 				B7A3C0D01D518C1B00851E3C /* Card.swift in Sources */,
@@ -378,12 +386,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7A3C0E01D51AA7B00851E3C /* DeckSpec.swift in Sources */,
-				B7A3C0E41D51ADF600851E3C /* PlayerSpec.swift in Sources */,
-				B7A3C0E61D51AFBF00851E3C /* GameEngineSpec.swift in Sources */,
+				1F8F6D25203FE39800714AB3 /* DeckSpec.swift in Sources */,
+				1F8F6D29203FF62B00714AB3 /* PlayerSpec.swift in Sources */,
 				B7A3C0DE1D51A9FC00851E3C /* CardSpec.swift in Sources */,
 				B7A3C0D41D518F3800851E3C /* ArraySpec.swift in Sources */,
-				B7A3C0E21D51AB9600851E3C /* HandSpec.swift in Sources */,
+				1F8F6D27203FF1CE00714AB3 /* HandSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,14 +433,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -473,14 +486,20 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

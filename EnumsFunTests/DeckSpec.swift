@@ -26,7 +26,7 @@ class DeckSpec: QuickSpec {
 
             describe("split") {
                 it("splits a deck into two hands") {
-                    let (left, right) = deck.split()
+                    let (left, right) = deck.split2()
                     expect(left.count).to(equal(26))
                     expect(right.count).to(equal(26))
                 }
