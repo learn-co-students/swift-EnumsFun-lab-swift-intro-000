@@ -49,7 +49,13 @@ class GameEngine {
             if c1.rank.rawValue == c2.rank.rawValue {
                 winTieBreaker = playTieBreaker(cards: [c1, c2])
             } else {
-                winner = c1.rank.rawValue > c2.rank.rawValue ? player1 : player2
+                if c1.rank.rawValue > c2.rank.rawValue {
+                    winner = player1
+                    award(cards: [c1, c2], to: player1)
+                } else {
+                    winner = player2
+                    award(cards: [c1, c2], to: player2)
+                }
             }
         } else if card1 != nil {
             winner = player1
@@ -62,7 +68,6 @@ class GameEngine {
         }
         
         if let tb = winTieBreaker {
-            print("Number of cards collected in tie breaker: \(winTieBreaker!.1.count)")
             return tb
         } else {
             return (winner, [card1, card2])
@@ -70,8 +75,6 @@ class GameEngine {
     }
     
     func playTieBreaker(cards: [Card?]) -> (Player?, [Card?]) {
-        //recursion? *implement in playOneTurn
-        //each player flips one more card face up each & one more card face down
         var cardUp1 = player1.flip()
         var cardUp2 = player2.flip()
         var cardDown1 = player1.flip()
@@ -79,16 +82,16 @@ class GameEngine {
         var winner: Player?
         let newCards = cards + [cardDown1, cardDown2, cardUp1, cardUp2]
         
-        // player with higher faceup card takes all 6 cards.  If values are tied again, repeat process until
-        // someone wins
         if let c1 = cardUp1, let c2 = cardUp2 {
             if c1.rank.rawValue == c2.rank.rawValue {
                 return playTieBreaker(cards: newCards)
             } else {
                 if c1.rank.rawValue > c2.rank.rawValue {
                     winner = player1
+                    award(cards: newCards, to: player1)
                 } else {
                     winner = player2
+                    award(cards: newCards, to: player2)
                 }
             }
         } else if cardUp1 != nil {
@@ -100,7 +103,6 @@ class GameEngine {
         } else {
                 winner = nil
         }
-        print("Tie breaker mode")
         return (winner, newCards)
         
     }
