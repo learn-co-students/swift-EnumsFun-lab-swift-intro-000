@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6FA73C9C9B22092BE3B2D01A /* Pods_EnumsFun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD6BEB565F2453886FAE0A25 /* Pods_EnumsFun.framework */; };
 		7D2BCC1A1D3FFCC800B4CD52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BCC191D3FFCC800B4CD52 /* AppDelegate.swift */; };
 		7D2BCC1C1D3FFCC800B4CD52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2BCC1B1D3FFCC800B4CD52 /* ViewController.swift */; };
 		7D2BCC1F1D3FFCC800B4CD52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2BCC1D1D3FFCC800B4CD52 /* Main.storyboard */; };
 		7D2BCC211D3FFCC800B4CD52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D2BCC201D3FFCC800B4CD52 /* Assets.xcassets */; };
 		7D2BCC241D3FFCC800B4CD52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2BCC221D3FFCC800B4CD52 /* LaunchScreen.storyboard */; };
-		81262DDF262A9C027926E44A /* Pods_EnumsFunTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B42E220F296C6223C32FDF8 /* Pods_EnumsFunTests.framework */; };
 		B7A3C0D01D518C1B00851E3C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C0CF1D518C1B00851E3C /* Card.swift */; };
 		B7A3C0D21D518E4700851E3C /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C0D11D518E4700851E3C /* Array.swift */; };
 		B7A3C0D41D518F3800851E3C /* ArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A3C0D31D518F3800851E3C /* ArraySpec.swift */; };
@@ -41,7 +39,6 @@
 /* Begin PBXFileReference section */
 		149EA297DE44E7D7B5DC7CA5 /* Pods-EnumsFunTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnumsFunTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnumsFunTests/Pods-EnumsFunTests.release.xcconfig"; sourceTree = "<group>"; };
 		21F9F56CAA1502CB54215923 /* Pods-EnumsFunTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnumsFunTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnumsFunTests/Pods-EnumsFunTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7B42E220F296C6223C32FDF8 /* Pods_EnumsFunTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnumsFunTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2BCC161D3FFCC800B4CD52 /* EnumsFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnumsFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D2BCC191D3FFCC800B4CD52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D2BCC1B1D3FFCC800B4CD52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +61,6 @@
 		B7A3C0E11D51AB9600851E3C /* HandSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandSpec.swift; sourceTree = "<group>"; };
 		B7A3C0E31D51ADF600851E3C /* PlayerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSpec.swift; sourceTree = "<group>"; };
 		B7A3C0E51D51AFBF00851E3C /* GameEngineSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEngineSpec.swift; sourceTree = "<group>"; };
-		CD6BEB565F2453886FAE0A25 /* Pods_EnumsFun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnumsFun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21F1A0FB6121FAA72AF640F /* Pods-EnumsFun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnumsFun.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnumsFun/Pods-EnumsFun.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,7 +69,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FA73C9C9B22092BE3B2D01A /* Pods_EnumsFun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,22 +76,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81262DDF262A9C027926E44A /* Pods_EnumsFunTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09DAB701106545C21CBEA285 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CD6BEB565F2453886FAE0A25 /* Pods_EnumsFun.framework */,
-				7B42E220F296C6223C32FDF8 /* Pods_EnumsFunTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		7D2BCC0D1D3FFCC800B4CD52 = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +89,6 @@
 				7D2BCC2D1D3FFCC800B4CD52 /* EnumsFunTests */,
 				7D2BCC171D3FFCC800B4CD52 /* Products */,
 				A83FF1A49711A6A165DA4FB7 /* Pods */,
-				09DAB701106545C21CBEA285 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +201,7 @@
 				TargetAttributes = {
 					7D2BCC151D3FFCC800B4CD52 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8CGMU353W8;
 						LastSwiftMigration = 0800;
 					};
 					7D2BCC291D3FFCC800B4CD52 = {
@@ -510,6 +495,7 @@
 			baseConfigurationReference = AB4A3C705BC0293860E275C6 /* Pods-EnumsFun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8CGMU353W8;
 				INFOPLIST_FILE = EnumsFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.EnumsFun;
@@ -523,6 +509,7 @@
 			baseConfigurationReference = D21F1A0FB6121FAA72AF640F /* Pods-EnumsFun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8CGMU353W8;
 				INFOPLIST_FILE = EnumsFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.EnumsFun;
