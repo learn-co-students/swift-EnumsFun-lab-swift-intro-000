@@ -217,6 +217,7 @@
 				TargetAttributes = {
 					7D2BCC151D3FFCC800B4CD52 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2NZM72YQ27;
 						LastSwiftMigration = 0800;
 					};
 					7D2BCC291D3FFCC800B4CD52 = {
@@ -510,6 +511,7 @@
 			baseConfigurationReference = AB4A3C705BC0293860E275C6 /* Pods-EnumsFun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2NZM72YQ27;
 				INFOPLIST_FILE = EnumsFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.EnumsFun;
@@ -523,6 +525,7 @@
 			baseConfigurationReference = D21F1A0FB6121FAA72AF640F /* Pods-EnumsFun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2NZM72YQ27;
 				INFOPLIST_FILE = EnumsFun/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Gamesmith.Swift.EnumsFun;
